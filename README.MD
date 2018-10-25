@@ -48,6 +48,14 @@ The default viewer is Kibana and its listen on port 5601 by default. Use your br
 You'll need to define an index to be visualized in kibana before starting to view and explore your data; ES guys have an official guide available in
 https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html to help with that :D
 
+By default, fluentd keeps tracks of all events exported by zabbix (history, trends, problems/events), using the following log_names to insert the entries into elastic:
+
+ * zabbix-event-history
+ * zabbix-event-problems
+ * zabbix-event-trends
+
+You can disable the ingest of some of them by editing the file `fluentd\fluent.conf` and then, restarting fluentd with `docker-compose restart fluentd`.
+
 Note 1: ElasticSearch Keeps Restarting
 --------------------------------------
 
