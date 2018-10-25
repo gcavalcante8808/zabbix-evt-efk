@@ -6,7 +6,7 @@ with zabbix 4.0.0+ and ingest it into the ElasticSearch.
 
 https://www.zabbix.com/documentation/4.0/manual/appendix/install/real_time_export
 
-It leverages zabbix componentes available as images from `github.com/gcavalcante8808/zabbix-docker` as well docker and docker-compose.
+It leverages zabbix components available as images from `github.com/gcavalcante8808/zabbix-docker`, as well docker and docker-compose.
 
 Requirements
 ------------
